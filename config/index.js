@@ -1,3 +1,7 @@
+const path = require('path')
+
+const resolve = dir => path.resolve(__dirname, '../src', dir)
+
 const config = {
   projectName: 'college-everything',
   date: '2019-7-28',
@@ -9,6 +13,10 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
+  alias: {
+    '@/store': resolve('store'),
+    '@/components': resolve('components')
+  },
   plugins: {
     babel: {
       sourceMap: true,

@@ -20,13 +20,36 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/search-college/index'
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      backgroundColor: '#3a9cf3',
+      selectedColor: '#3a9cf3',
+      backgroundColor: '#ffffff',
+      color: '#333333',
+      list: [{
+        pagePath: 'pages/index/index',
+        selectedIconPath: './assets/image/tab/icon-search-active.png',
+        iconPath: './assets/image/tab/icon-search.png',
+        text: '查询'
+      }, {
+        pagePath: 'pages/index/index',
+        selectedIconPath: './assets/image/tab/icon-info-active.png',
+        iconPath: './assets/image/tab/icon-info.png',
+        text: '资讯'
+      }, {
+        pagePath: 'pages/index/index',
+        selectedIconPath: './assets/image/tab/icon-me-active.png',
+        iconPath: './assets/image/tab/icon-me.png',
+        text: '我的'
+      }]
     }
   }
 
